@@ -1,0 +1,26 @@
+.main__card {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #e6e7e8;
+  border-radius: 10px;
+
+  &--img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &-price {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+
+  &-title {
+    margin-top: 1rem;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,63 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  width: 1200px;
+  margin: auto;
+
+  &__col {
+    display: flex;
+    align-items: center;
+  }
+
+  &__socials__list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &-item {
+
+      &--link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hsla(0,0%,76.9%,.1);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        
+        & svg {
+          transition: .2s fill;
+        }
+
+        & svg.yt  {
+          transition: none;
+
+          & g {
+            transition: .1s fill;
+          }
+        }
+
+        &:hover svg.vk {
+          fill: #0077ff !important;
+        }
+
+        &:hover svg.ok {
+          fill: #ff7802 !important;
+        }
+
+        &:hover svg.yt g {
+          fill: #de0000 !important;
+        }
+      }
+    }
+  }
+
+  &__phone__list {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-left: 5rem;
+  }
+}
