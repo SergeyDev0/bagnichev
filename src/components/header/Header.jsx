@@ -12,7 +12,8 @@ const Header = () => {
       <nav className="header__nav">
         <ul className="header__nav__list">
           <li className="header__nav__list-item"><Link to="/" className="header__nav__list-item--link">Главная</Link></li>
-          <li className="header__nav__list-item"><Link to="/products" className="header__nav__list-item--link">Каталог</Link></li>
+          <li className="header__nav__list-item"><Link to="/furniture" className="header__nav__list-item--link">Мебель</Link></li>
+          <li className="header__nav__list-item"><Link to="/toys" className="header__nav__list-item--link">Игрушки</Link></li>
           <li className="header__nav__list-item"><Link to="/about" className="header__nav__list-item--link">О нас</Link></li>
         </ul>
       </nav>

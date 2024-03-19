@@ -20,8 +20,16 @@ body, button, input::placeholder, input {
   width: 1200px;
   margin: auto;
 
+  @media screen and (max-width: 1200px) {
+      width: 100%;
+  }
+
   &__title {
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+    }
   }
 
   &__wrapper-cards {
@@ -29,6 +37,12 @@ body, button, input::placeholder, input {
     grid-template-columns: repeat(auto-fill, 225px);
     justify-content: space-between;
     row-gap: calc((1200px - (225px * 5)) / 4);
+
+    @media screen and (max-width: 1200px) {
+      margin: auto;
+      justify-content: center;
+      gap: 1.5rem;
+    }
   }
 }
 
@@ -51,7 +65,7 @@ body, button, input::placeholder, input {
     flex-direction: column;
     gap: 1.5rem;
     padding: 30px 20px;
-    box-shadow: 0 0 40px rgba(0,0,0,.05);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.096);
     border-radius: 40px;
   }
 
@@ -68,8 +82,14 @@ body, button, input::placeholder, input {
     font-size: 32px;
   }
 
+  &__wrapper-img {
+    display: flex;
+    justify-content: center;
+  }
+
   &--img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 80vh;
     border-radius: 50px;
   }
 
@@ -98,5 +118,32 @@ body, button, input::placeholder, input {
     &-item {
       font-size: 17px;
     }
+  }
+}
+
+.main__card {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #e6e7e8;
+  border-radius: 10px;
+
+  &--img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &-price {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+
+  &-title {
+    margin-top: 1rem;
+    line-height: 18px;
   }
 }

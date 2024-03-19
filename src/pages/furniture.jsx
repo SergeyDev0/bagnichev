@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import ProductCard from "../components/productCard/ProductCard";
 
-const Home = () => {
+const Furniture = () => {
   const [products, setProducts] = React.useState([]);
 
   React.useEffect(() => {
@@ -19,29 +19,27 @@ const Home = () => {
     fetchProducts()
   }, [])
   return (
-    <>
+    <> 
       <Header />
       <main className="main">
-        <h1 className="main__title">Мы рекомендуем</h1>
+        <h1 className="main__title">Мебель</h1>
         <div className="main__wrapper-cards">
           {
-            products.map((item, index) => (
-              index < 10 && (
-                <ProductCard 
+            products.map((item) => (
+              <ProductCard
                 key={item.id}
                 id={item.id}
                 title={item.name}
                 price={item.price}
                 img={item.shorticon}
               />
-              )
             ))
           }
         </div>
       </main>
-      <Footer />
+      <Footer /> 
     </>
   )
 };
 
-export default Home;
+export default Furniture;

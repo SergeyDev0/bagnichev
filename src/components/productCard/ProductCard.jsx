@@ -1,5 +1,5 @@
 import React from "react";
-import "./productCard.scss"
+import "../../assets/scss/index.scss";
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ title, price, img, id }) => {
