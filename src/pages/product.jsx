@@ -17,6 +17,7 @@ const Product = () => {
         console.error('Error fetching data:', error);
       }
     }
+    
     fetchDataProduct();
   }, [id])
   return (

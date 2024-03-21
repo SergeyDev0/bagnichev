@@ -43,15 +43,28 @@ body, button, input::placeholder, input {
       justify-content: center;
       gap: 1.5rem;
     }
+
+    @media screen and (max-width: 500px) {
+      grid-template-columns: repeat(auto-fill, 300px);
+    }
   }
 }
 
 .about {
+  @media screen and (max-width: 1200px) {
+    box-sizing: border-box;
+    padding: 0 1rem;
+  }
+
   &__wrapper-illustration {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 2rem 0;
+
+    @media screen and (max-width: 500px) {
+      margin-top: 1rem;
+    }
 
     &--img {
       border-radius: 50px;
@@ -77,9 +90,21 @@ body, button, input::placeholder, input {
 }
 
 .product {
+  box-sizing: border-box;
+  padding: 0 1rem;
+
   &__title {
     margin-bottom: 1rem;
     font-size: 32px;
+
+    @media screen and (max-width: 500px) {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    @media screen and (max-width: 375px) {
+      font-size: 22px;
+    }
   }
 
   &__wrapper-img {
@@ -102,6 +127,14 @@ body, button, input::placeholder, input {
   &__price {
     font-size: 26px;
     margin-top: 1.5rem;
+
+    @media screen and (max-width: 500px) {
+      font-size: 23px;
+    }
+
+    @media screen and (max-width: 375px) {
+      font-size: 22px;
+    }
   }
 
   &__subtitle {

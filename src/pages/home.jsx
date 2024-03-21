@@ -28,12 +28,12 @@ const Home = () => {
             products.map((item, index) => (
               index < 10 && (
                 <ProductCard 
-                key={item.id}
-                id={item.id}
-                title={item.name}
-                price={item.price}
-                img={item.shorticon}
-              />
+                  key={item.id}
+                  id={item.id}
+                  title={item.name}
+                  price={item.price}
+                  img={item.shorticon}
+                />
               )
             ))
           }

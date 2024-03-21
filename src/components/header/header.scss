@@ -27,6 +27,10 @@
     gap: 1rem;
   }
 
+  @media screen and (max-width: 720px) {
+    padding-bottom: 1rem;
+  }
+
   &__nav {
     @media screen and (max-width: 720px) {
       order: 1;
@@ -39,6 +43,10 @@
 
     @media screen and (max-width: 980px) {
       gap: 2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      gap: 1rem;
     }
 
     &-item--link {
