@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../../assets/img/name_bagn.png"
+import logo from "../../assets/icons/logo.svg"
 import { Link } from "react-router-dom";
 import "./header.scss"
 
